@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/bottom_margin"
+    android:layout_marginTop="@dimen/top_margin">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +16,11 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/team_side_margin"
+            android:layout_marginLeft="@dimen/team_side_margin"
+            android:layout_marginRight="@dimen/team_side_margin"
+            android:layout_marginStart="@dimen/team_side_margin"
             android:layout_weight="1"
             android:orientation="vertical"
             tools:context="com.greiner_co.courtcounter.MainActivity">
@@ -22,47 +28,60 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/children_vertical_spacing"
+                android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:padding="@dimen/textView_padding"
+                android:paddingTop="@dimen/textView_padding"
                 android:text="@string/team_a"
-                android:textColor="@android:color/black" />
+                android:textColor="#616161"
+                android:textSize="@dimen/txt_size_team" />
 
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/children_vertical_spacing"
+                android:layout_marginBottom="@dimen/top_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
-                android:padding="@dimen/textView_padding"
-                tools:ignore="HardcodedText" />
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_score" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/children_vertical_spacing"
+                android:layout_marginBottom="@dimen/children_vertical_spacing"
                 android:onClick="addThreePointsToTeamA"
                 android:text="@string/add_3_points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/children_vertical_spacing"
+                android:layout_marginBottom="@dimen/children_vertical_spacing"
                 android:onClick="addTwoPointsToTeamA"
                 android:text="@string/add_2_points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/children_vertical_spacing"
                 android:onClick="addFreeThrowPointToTeamA"
                 android:text="@string/free_throw" />
 
         </LinearLayout>
 
+        <View
+            android:layout_width="@dimen/grey_line_width"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray">
+
+        </View>
+
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/team_side_margin"
+            android:layout_marginLeft="@dimen/team_side_margin"
+            android:layout_marginRight="@dimen/team_side_margin"
+            android:layout_marginStart="@dimen/team_side_margin"
             android:layout_weight="1"
             android:orientation="vertical"
             tools:context="com.greiner_co.courtcounter.MainActivity">
@@ -70,39 +89,41 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/children_vertical_spacing"
+                android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:padding="@dimen/textView_padding"
+                android:paddingTop="@dimen/textView_padding"
                 android:text="@string/team_b"
-                android:textColor="@android:color/black" />
+                android:textColor="#616161"
+                android:textSize="@dimen/txt_size_team" />
 
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/children_vertical_spacing"
+                android:layout_marginBottom="@dimen/top_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
-                android:padding="@dimen/textView_padding"
-                tools:ignore="HardcodedText" />
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_score" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/children_vertical_spacing"
+                android:layout_marginBottom="@dimen/children_vertical_spacing"
                 android:onClick="addThreePointsToTeamB"
                 android:text="@string/add_3_points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/children_vertical_spacing"
+                android:layout_marginBottom="@dimen/children_vertical_spacing"
                 android:onClick="addTwoPointsToTeamB"
                 android:text="@string/add_2_points" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/children_vertical_spacing"
                 android:onClick="addFreeThrowPointToTeamB"
                 android:text="@string/free_throw" />
 
@@ -115,7 +136,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/children_vertical_spacing"
         android:onClick="reset"
         android:text="@string/button_reset" />
 </RelativeLayout>
