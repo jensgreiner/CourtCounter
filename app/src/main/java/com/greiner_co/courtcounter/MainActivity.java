@@ -31,20 +31,23 @@ public class MainActivity extends AppCompatActivity {
      * Add 3 points to the score of Team A
      */
     public void addThreePointsToTeamA(View view) {
-        displayForTeamA(3);
+        scoreTeamA += 3;
+        displayForTeamA(scoreTeamA);
     }
 
     /**
      * Add 2 points to the score of Team A
      */
     public void addTwoPointsToTeamA(View view) {
-        displayForTeamA(2);
+        scoreTeamA += 2;
+        displayForTeamA(scoreTeamA);
     }
 
     /**
      * Add 1 point to the score of Team A
      */
     public void addFreeThrowPointToTeamA(View view) {
-        displayForTeamA(1);
+        scoreTeamA += 1;
+        displayForTeamA(scoreTeamA);
     }
 }
