@@ -30,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/children_vertical_spacing"
+        android:onClick="addThreePointsToTeamA"
         android:text="@string/add_3_points"
         android:textAllCaps="true" />
 
@@ -38,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/children_vertical_spacing"
+        android:onClick="addTwoPointsToTeamA"
         android:text="@string/add_2_points"
         android:textAllCaps="true" />
 
@@ -46,6 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/children_vertical_spacing"
+        android:onClick="addFreeThrowPointToTeamA"
         android:text="@string/free_throw"
         android:textAllCaps="true" />
 
