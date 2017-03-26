@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/children_vertical_spacing"
         android:gravity="center_horizontal"
+        android:padding="@dimen/textView_padding"
         android:text="@string/team_a"
         android:textColor="@android:color/black" />
 
@@ -20,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/children_vertical_spacing"
         android:gravity="center_horizontal"
+        android:padding="@dimen/textView_padding"
         android:text="3"
         tools:ignore="HardcodedText" />
 
@@ -27,7 +29,7 @@
         android:id="@+id/btn_3_points"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/children_vertical_spacing"
+        android:layout_margin="@dimen/children_vertical_spacing"
         android:text="@string/add_3_points"
         android:textAllCaps="true" />
 
@@ -35,7 +37,7 @@
         android:id="@+id/btn_2_points"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/children_vertical_spacing"
+        android:layout_margin="@dimen/children_vertical_spacing"
         android:text="@string/add_2_points"
         android:textAllCaps="true" />
 
@@ -43,7 +45,7 @@
         android:id="@+id/btn_free_throw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/children_vertical_spacing"
+        android:layout_margin="@dimen/children_vertical_spacing"
         android:text="@string/free_throw"
         android:textAllCaps="true" />
 
