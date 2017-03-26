@@ -3,52 +3,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.greiner_co.courtcounter.MainActivity">
+    android:baselineAligned="false"
+    android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/children_vertical_spacing"
-        android:gravity="center_horizontal"
-        android:padding="@dimen/textView_padding"
-        android:text="@string/team_a"
-        android:textColor="@android:color/black" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="com.greiner_co.courtcounter.MainActivity">
 
-    <TextView
-        android:id="@+id/team_a_score"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/children_vertical_spacing"
-        android:gravity="center_horizontal"
-        android:padding="@dimen/textView_padding"
-        tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/children_vertical_spacing"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/textView_padding"
+            android:text="@string/team_a"
+            android:textColor="@android:color/black" />
 
-    <Button
-        android:id="@+id/btn_3_points"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/children_vertical_spacing"
-        android:onClick="addThreePointsToTeamA"
-        android:text="@string/add_3_points"
-        android:textAllCaps="true" />
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/children_vertical_spacing"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/textView_padding"
+            tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_2_points"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/children_vertical_spacing"
-        android:onClick="addTwoPointsToTeamA"
-        android:text="@string/add_2_points"
-        android:textAllCaps="true" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/children_vertical_spacing"
+            android:onClick="addThreePointsToTeamA"
+            android:text="@string/add_3_points"
+            android:textAllCaps="true" />
 
-    <Button
-        android:id="@+id/btn_free_throw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/children_vertical_spacing"
-        android:onClick="addFreeThrowPointToTeamA"
-        android:text="@string/free_throw"
-        android:textAllCaps="true" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/children_vertical_spacing"
+            android:onClick="addTwoPointsToTeamA"
+            android:text="@string/add_2_points"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/children_vertical_spacing"
+            android:onClick="addFreeThrowPointToTeamA"
+            android:text="@string/free_throw"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="com.greiner_co.courtcounter.MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/children_vertical_spacing"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/textView_padding"
+            android:text="@string/team_b"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/children_vertical_spacing"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/textView_padding"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/children_vertical_spacing"
+            android:onClick="addThreePointsToTeamB"
+            android:text="@string/add_3_points"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/children_vertical_spacing"
+            android:onClick="addTwoPointsToTeamB"
+            android:text="@string/add_2_points"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/children_vertical_spacing"
+            android:onClick="addFreeThrowPointToTeamB"
+            android:text="@string/free_throw"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
 
 </LinearLayout>
