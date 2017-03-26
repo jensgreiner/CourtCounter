@@ -22,7 +22,6 @@
         android:layout_marginBottom="@dimen/children_vertical_spacing"
         android:gravity="center_horizontal"
         android:padding="@dimen/textView_padding"
-        android:text="0"
         tools:ignore="HardcodedText" />
 
     <Button

@@ -7,10 +7,16 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // private attributes
+    private int scoreTeamA = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // My custom code
+        displayForTeamA(scoreTeamA);
     }
 
     /**
