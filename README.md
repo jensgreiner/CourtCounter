@@ -1,5 +1,5 @@
 # CourtCounter
-Udacity Android Basics Scholarship EU
+Udacity EU Scholarship Android Development for Beginners
 
 This concludes lessons to add Java code to the app UI.
 
